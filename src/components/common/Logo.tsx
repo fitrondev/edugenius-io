@@ -23,6 +23,7 @@ const Logo = ({ className, text_className }: LogoProps) => {
         width={40}
         height={40}
         priority
+        className="size-auto"
       />
 
       <span className="sr-only">Edugenius</span>
