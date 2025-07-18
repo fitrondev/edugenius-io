@@ -25,9 +25,11 @@ const Logo = ({ className, text_className }: LogoProps) => {
         priority
       />
 
-      <span className="sr-only">Tripnesia</span>
-      <span className={cn("text-2xl font-bold", text_className)}>
-        Tripnesia
+      <span className="sr-only">Edugenius</span>
+      <span
+        className={cn("hidden text-2xl font-bold md:inline", text_className)}
+      >
+        Edugenius<span className="text-primary">.io</span>
       </span>
     </Link>
   );
