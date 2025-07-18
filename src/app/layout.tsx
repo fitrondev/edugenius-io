@@ -11,8 +11,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Tripnesia",
-  description: "Tripnesia - Discover Your Next Adventure",
+  title: "Edu Genius",
+  description:
+    "Platform pembelajaran online yang menyediakan berbagai materi dan sumber daya untuk membantu siswa belajar dengan cara yang menyenangkan dan efektif.",
 };
 
 export default function RootLayout({
