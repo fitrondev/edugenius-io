@@ -5,9 +5,12 @@ import {
   Camera,
   Clock,
   Code,
+  Facebook,
   Globe,
   Heart,
+  Instagram,
   Lightbulb,
+  Linkedin,
   LucideIcon,
   Mail,
   MapPin,
@@ -17,8 +20,10 @@ import {
   Rocket,
   Smartphone,
   Target,
+  Twitter,
   Users,
   Video,
+  Youtube,
 } from "lucide-react";
 
 export interface NavigationItem {
@@ -68,6 +73,22 @@ export interface ContactItem {
   description: string;
   link: string;
   linkText: string;
+}
+
+export interface FooterLink {
+  label: string;
+  href: string;
+}
+
+export interface FooterSection {
+  title: string;
+  links: FooterLink[];
+}
+
+export interface SocialLink {
+  icon: LucideIcon;
+  href: string;
+  label: string;
 }
 
 export const navigationData: NavigationItem[] = [
@@ -165,6 +186,73 @@ export const contactData: ContactItem[] = [
     description: "Senin-Jumat dari 08:00 - 17:00.",
     link: "tel:+6221123456789",
     linkText: "+62 21 1234 5678",
+  },
+];
+
+export const footerSections: FooterSection[] = [
+  {
+    title: "Produk",
+    links: [
+      { label: "Kursus Online", href: "/courses" },
+      { label: "Sertifikasi", href: "/certification" },
+      { label: "Bootcamp", href: "/bootcamp" },
+      { label: "Mentoring", href: "/mentoring" },
+    ],
+  },
+  {
+    title: "Perusahaan",
+    links: [
+      { label: "Tentang Kami", href: "/#about" },
+      { label: "Karir", href: "/careers" },
+      { label: "Blog", href: "/blog" },
+      { label: "Press Kit", href: "/press" },
+    ],
+  },
+  {
+    title: "Dukungan",
+    links: [
+      { label: "Pusat Bantuan", href: "/help" },
+      { label: "Kontak", href: "/#contact" },
+      { label: "FAQ", href: "/faq" },
+      { label: "Status", href: "/status" },
+    ],
+  },
+  {
+    title: "Legal",
+    links: [
+      { label: "Kebijakan Privasi", href: "/privacy" },
+      { label: "Syarat & Ketentuan", href: "/terms" },
+      { label: "Cookie Policy", href: "/cookies" },
+      { label: "Lisensi", href: "/license" },
+    ],
+  },
+];
+
+export const socialLinks: SocialLink[] = [
+  {
+    icon: Facebook,
+    href: "https://facebook.com/edugenius",
+    label: "Facebook",
+  },
+  {
+    icon: Twitter,
+    href: "https://twitter.com/edugenius",
+    label: "Twitter",
+  },
+  {
+    icon: Instagram,
+    href: "https://instagram.com/edugenius",
+    label: "Instagram",
+  },
+  {
+    icon: Linkedin,
+    href: "https://linkedin.com/company/edugenius",
+    label: "LinkedIn",
+  },
+  {
+    icon: Youtube,
+    href: "https://youtube.com/edugenius",
+    label: "YouTube",
   },
 ];
 
