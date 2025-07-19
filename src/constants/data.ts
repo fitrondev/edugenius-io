@@ -6,10 +6,14 @@ import {
   Clock,
   Code,
   Globe,
+  Heart,
+  Lightbulb,
   LucideIcon,
   MessageCircle,
   Palette,
+  Rocket,
   Smartphone,
+  Target,
   Users,
   Video,
 } from "lucide-react";
@@ -49,11 +53,16 @@ export interface TestimonialItem {
   avatar?: string;
 }
 
+export interface AboutValueItem {
+  icon: LucideIcon;
+  title: string;
+  description: string;
+}
+
 export const navigationData: NavigationItem[] = [
   { href: "/#features", label: "Features" },
   { href: "/courses", label: "Courses" },
   { href: "/#testimonials", label: "Testimonials" },
-  { href: "/#pricing", label: "Pricing" },
   { href: "/#about", label: "About" },
   { href: "/#contact", label: "Contact" },
 ];
@@ -95,6 +104,29 @@ export const featuresData: FeatureItem[] = [
     description:
       "Dapatkan bimbingan langsung dari mentor berpengalaman untuk membantu perjalanan belajar kamu.",
   },
+];
+
+export const aboutValuesData: AboutValueItem[] = [
+  {
+    icon: Target,
+    title: "Misi Kami",
+    description: "Menyediakan akses pendidikan berkualitas untuk semua kalangan dengan teknologi terdepan dan metode pembelajaran yang inovatif."
+  },
+  {
+    icon: Lightbulb,
+    title: "Visi Kami",
+    description: "Menjadi platform pembelajaran online terdepan yang memberdayakan jutaan orang untuk mencapai potensi terbaik mereka."
+  },
+  {
+    icon: Heart,
+    title: "Nilai Kami",
+    description: "Berkomitmen pada kualitas, inklusivitas, dan inovasi dalam setiap aspek pembelajaran yang kami tawarkan."
+  },
+  {
+    icon: Rocket,
+    title: "Tujuan Kami",
+    description: "Membantu setiap individu mengembangkan keterampilan yang relevan untuk masa depan yang lebih cerah dan sukses."
+  }
 ];
 
 export const coursesData: CourseItem[] = [

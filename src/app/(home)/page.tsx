@@ -1,3 +1,4 @@
+import About from "@/components/layouts/About";
 import Features from "@/components/layouts/Features";
 import Hero from "@/components/layouts/Hero";
 import Testimonials from "@/components/layouts/Testimonials";
@@ -11,6 +12,7 @@ const Home = () => {
       <Features />
       <Courses />
       <Testimonials />
+      <About />
     </main>
   );
 };
