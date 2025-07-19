@@ -1,9 +1,12 @@
+import { cn } from "@/lib/utils";
+
 type SectionTitleProps = {
   badge?: string;
   title: string;
   highlight?: string;
   description?: string;
   className?: string;
+  highlight_className?: string;
 };
 
 const SectionTitle = ({
@@ -12,9 +15,10 @@ const SectionTitle = ({
   description,
   highlight,
   className = "",
+  highlight_className,
 }: SectionTitleProps) => {
   return (
-    <div className={className}>
+    <div className={cn("", className)}>
       {/* Badge */}
       {badge && (
         <div className="bg-primary/10 text-primary mb-6 inline-flex items-center rounded-full px-4 py-2 text-sm font-medium">
@@ -25,8 +29,12 @@ const SectionTitle = ({
 
       {/* Title */}
       <h2 className="mb-4 text-3xl font-bold md:text-4xl lg:text-5xl">
-        {title}
-        {highlight && <span className="text-primary block">{highlight}</span>}
+        {title}{" "}
+        {highlight && (
+          <span className={cn("text-primary block", highlight_className)}>
+            {highlight}
+          </span>
+        )}
       </h2>
 
       {/* Description */}
