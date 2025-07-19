@@ -9,8 +9,11 @@ import {
   Heart,
   Lightbulb,
   LucideIcon,
+  Mail,
+  MapPin,
   MessageCircle,
   Palette,
+  Phone,
   Rocket,
   Smartphone,
   Target,
@@ -57,6 +60,14 @@ export interface AboutValueItem {
   icon: LucideIcon;
   title: string;
   description: string;
+}
+
+export interface ContactItem {
+  icon: LucideIcon;
+  title: string;
+  description: string;
+  link: string;
+  linkText: string;
 }
 
 export const navigationData: NavigationItem[] = [
@@ -110,23 +121,51 @@ export const aboutValuesData: AboutValueItem[] = [
   {
     icon: Target,
     title: "Misi Kami",
-    description: "Menyediakan akses pendidikan berkualitas untuk semua kalangan dengan teknologi terdepan dan metode pembelajaran yang inovatif."
+    description:
+      "Menyediakan akses pendidikan berkualitas untuk semua kalangan dengan teknologi terdepan dan metode pembelajaran yang inovatif.",
   },
   {
     icon: Lightbulb,
     title: "Visi Kami",
-    description: "Menjadi platform pembelajaran online terdepan yang memberdayakan jutaan orang untuk mencapai potensi terbaik mereka."
+    description:
+      "Menjadi platform pembelajaran online terdepan yang memberdayakan jutaan orang untuk mencapai potensi terbaik mereka.",
   },
   {
     icon: Heart,
     title: "Nilai Kami",
-    description: "Berkomitmen pada kualitas, inklusivitas, dan inovasi dalam setiap aspek pembelajaran yang kami tawarkan."
+    description:
+      "Berkomitmen pada kualitas, inklusivitas, dan inovasi dalam setiap aspek pembelajaran yang kami tawarkan.",
   },
   {
     icon: Rocket,
     title: "Tujuan Kami",
-    description: "Membantu setiap individu mengembangkan keterampilan yang relevan untuk masa depan yang lebih cerah dan sukses."
-  }
+    description:
+      "Membantu setiap individu mengembangkan keterampilan yang relevan untuk masa depan yang lebih cerah dan sukses.",
+  },
+];
+
+export const contactData: ContactItem[] = [
+  {
+    icon: Mail,
+    title: "Email",
+    description: "Tim kami siap membantu Anda.",
+    link: "mailto:info@edugenius.io",
+    linkText: "info@edugenius.io",
+  },
+  {
+    icon: MapPin,
+    title: "Kantor",
+    description: "Kunjungi kantor pusat kami.",
+    link: "https://maps.google.com",
+    linkText: "Jl. Sudirman No. 123\nJakarta Pusat 10220",
+  },
+  {
+    icon: Phone,
+    title: "Telepon",
+    description: "Senin-Jumat dari 08:00 - 17:00.",
+    link: "tel:+6221123456789",
+    linkText: "+62 21 1234 5678",
+  },
 ];
 
 export const coursesData: CourseItem[] = [
