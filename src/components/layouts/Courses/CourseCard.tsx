@@ -14,9 +14,9 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
-interface CourseCardProps {
+type CourseCardProps = {
   course: CourseItem;
-}
+};
 
 const CourseCard = ({ course }: CourseCardProps) => {
   const IconComponent = course.icon;
