@@ -9,7 +9,7 @@ import CourseCard from "./CourseCard";
 
 const Courses = () => {
   return (
-    <section className="from-primary/5 via-background to-primary/10 bg-gradient-to-br py-10 md:py-14">
+    <section className="py-10 md:py-14">
       <div className="container space-y-8">
         {/* Section Header */}
         <SectionTitle

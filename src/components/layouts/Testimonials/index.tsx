@@ -17,10 +17,7 @@ import TestimonialCard from "./TestimonialCard";
 
 const Testimonials = () => {
   return (
-    <section
-      id="testimonials"
-      className="from-primary/5 via-background to-primary/10 bg-gradient-to-br py-10 md:py-14"
-    >
+    <section id="testimonials" className="py-10 md:py-14">
       <div className="container space-y-8">
         <SectionTitle
           badge="Testimonials"
